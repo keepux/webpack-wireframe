@@ -3,6 +3,9 @@ const webpack = require('webpack');
 
 module.exports = {
     context: path.resolve(__dirname, 'src'),
+    resolve: {
+        modules: [path.resolve(__dirname, 'src'), 'node_modules'],
+    },
     entry: {
         app: './app.js',
     },
@@ -35,6 +38,10 @@ module.exports = {
                         options: { modules: true },
                     },
                 ],
+            },
+            {
+                test: /\.(sass|scss)$/i,
+                use: ['style-loader', 'css-loader', 'sass-loader'],
             },
         ],
     },

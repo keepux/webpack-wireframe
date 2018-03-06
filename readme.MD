@@ -18,3 +18,5 @@ node_modules/.bin/webpack-dev-server
 ```
 dist/app.bundle.js
 ```
+Source:
+_https://blog.envylabs.com/getting-started-with-webpack-2-ed2b86c68783_
