@@ -8,3 +8,8 @@ yarn install
 node_modules/.bin/webpack -p
 ```
 *node_modules/.bin/ ensures that the local version runs*
+
+### Outputs
+```
+dist/app.bundle.js
+```
